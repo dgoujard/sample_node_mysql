@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Shippable/sample_node_mysql",
   "dependencies": {
-    "knex": "^0.5.14",
+    "knex": "^0.19.5",
     "mysql": "^2.2.0"
   },
   "devDependencies": {
