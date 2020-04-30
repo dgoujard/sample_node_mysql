@@ -4,7 +4,9 @@
   "description": "Testing MySql service",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/_mocha -R xunit-file test.js"
+    "test": "./node_modules/.bin/_mocha -R xunit-file test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,14 @@
   "homepage": "https://github.com/Shippable/sample_node_mysql",
   "dependencies": {
     "knex": "^0.5.14",
-    "mysql": "^2.2.0"
+    "mysql": "^2.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",
     "istanbul": "^0.2.9",
     "mocha": "^1.18.2",
     "xunit-file": "0.0.5"
-  }
+  },
+  "snyk": true
 }
